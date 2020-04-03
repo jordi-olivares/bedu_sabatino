@@ -1,76 +1,45 @@
-body{
-    background-color: #3f888f;
-    font-family: 'Source Sans Pro',sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
-    font-family: 'Fjalla One', sans-serif;
+.container{
+    display: grid;
+    grid-template-columns: 1r;
+    grid-template-rows: 1fr 100% 1fr;
 }
 
-header{
-    background-color: #616d71;
+/*Menu de navegación*/
+.header{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+#logotipo{
+    height: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*parte del Hero*/
+
+.hero{
+    background-image: url('../images/fondoHeader.jpg');
+    background-size: 100% 100%;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: 100px 1fr 200px;
+}
+
+/*seccion de la cabecera*/
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    border-radius: 5px;
 }
 #logotipo{
     width: 100px;
-    padding-left: 20px;
 }
-a{
-    color: white;
-    text-decoration: none;
-}
-.register a{
-    padding: 20px;   
-}
-a:hover{
-    color: peru;
-    font-size: large;
-}
-.register a:active{
-    background-color: #3f888f;
-    color: white;
-    border-radius: 5px;
-}
-/*sección principal hero*/
-
-.hero{
-    height: 900px;
-    background-image: url('../images/fondoHeader.jpg');
-    background-size: 100% 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero>label{
-    margin-right: 30px;
-    align-items: center;
-    color: #616d71;
-    font-family: 'Fjalla One', sans-serif;
-}
-.hero>button:hover{
-    background-color: powderblue;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #616d71;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.icono {
-    width: 10px;
-}
-
-/*Reactividad*/
-
