@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 1r;
-    grid-template-rows: 1fr 100% 1fr;
+    grid-template-rows: minmax(30px,5vh) 70vh 25vh;
 }
 
 /*Menu de navegación*/
@@ -10,13 +10,14 @@
     background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    margin-bottom: 0;
 }
 #logotipo{
     height: 30px;
 }
-a{
+div header nav a{
     text-decoration: none;
+    margin-right: 10px;
 }
 
 
@@ -24,22 +25,22 @@ a{
 
 .hero{
     background-image: url('../images/fondoHeader.jpg');
-    background-size: 100% 100%;
-
-}
-
-.container{
-    display: grid;
-    grid-template-columns:1fr ;
-    grid-template-rows: 100px 1fr 200px;
-}
-
-/*seccion de la cabecera*/
-.header{
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    /*height: 70vh;*/
 }
-#logotipo{
-    width: 100px;
+
+.promocion{
+    text-align: center;
 }
+
+
+/*parte del footer*/
+
+footer{
+    background-color: grey;
+}
+
